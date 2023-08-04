@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="page-section">
+    <form onSubmit="scanCode">
+      <view>
+        <button type="primary" onTap="scan">{{I18N_T['ant-mini-program-demo.API.scan-code.scan-code.ScanCode']}}</button>
+      </view>
+    </form>
+  </view>
+</view>

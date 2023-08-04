@@ -1,0 +1,31 @@
+<!--textarea.axml-->
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.component.textarea.textarea.TextBox']}}</view>
+  <view class="page-section">
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.component.textarea.textarea.ControlledFocus']}}</view>
+    <view class="page-section-demo">
+      <textarea focus="{{focus}}" onFocus="onFocus" onBlur="onBlur" placeholder="Please input something" />
+    </view>
+    <view class="page-section-btns">
+      <button type="default" size="mini" onTap="bindButtonTap">{{I18N_T['ant-mini-program-demo.component.textarea.textarea.Focus']}}</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.component.textarea.textarea.AdaptiveHeight']}}</view>
+    <view class="page-section-demo">
+      <textarea onBlur="bindTextAreaBlur" auto-height placeholder="Please input something" />
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.component.textarea.textarea.CombinedForm']}}</view>
+    <form onSubmit="bindFormSubmit">
+      <view class="page-section-demo">
+        <textarea name="textarea" placeholder="Please input something" />
+      </view>
+      <view class="page-section-btns">
+        <button form-type="submit" size="mini" type="primary">{{I18N_T['ant-mini-program-demo.component.textarea.textarea.Submit']}}</button>
+      </view>  
+    </form>
+  </view>
+</view>

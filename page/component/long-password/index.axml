@@ -1,0 +1,6 @@
+<view>
+  <view style="margin-top: 10px;" />
+  <view style="padding: 0 10px;">{{I18N_T['ant-mini-program-demo.component.long-password.LongPasswordBox']}}</view>
+  <view style="margin-top: 10px;" />
+  <long-password placeholder="" value="{{longPassword}}" clear="{{true}}" onInput="onInput" onClear="onClear" />
+</view>

@@ -1,0 +1,67 @@
+<view style="margin-top: 10px;" />
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle']}}" onCouponClick="onCouponClick" thumb="{{thumb}}">
+  </coupon>
+</view>
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle.1']}}" subtitle="{{I18N_T['ant-mini-program-demo.component.coupon.CouponSubtitle']}}" onCouponClick="onCouponClick" thumb="{{thumb}}">
+  </coupon>
+</view>
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle.2']}}" subtitle="{{I18N_T['ant-mini-program-demo.component.coupon.CouponSubtitle']}}" used="{{true}}" onCouponClick="onCouponClick" thumb="{{thumb}}">
+    <view slot="date">{{I18N_T['ant-mini-program-demo.component.coupon.ValidityPeriod']}}</view>
+    <view slot="detail" class="coupon_rule">
+      <text>{{I18N_T['ant-mini-program-demo.component.coupon.DetailedRuleDescriptionDetailedRule']}}</text>
+      <text>{{I18N_T['ant-mini-program-demo.component.coupon.DetailedRuleDescriptionDetailedRule.4']}}</text>
+    </view>
+  </coupon>
+</view>
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle.3']}}" subtitle="{{I18N_T['ant-mini-program-demo.component.coupon.CouponSubtitle']}}" onCouponClick="onCouponClick" thumb="{{thumb}}">
+    <view slot="category" class="categoryDemo">
+      <text class="price">50</text><text class="unit">{{I18N_T['ant-mini-program-demo.component.coupon.Yuan']}}</text><text class="type">{{I18N_T['ant-mini-program-demo.component.coupon.DiscountCoupon']}}</text>
+    </view>
+    <button shape="capsule" slot="action" onTap="onButtonTap" type="ghost">{{I18N_T['ant-mini-program-demo.component.coupon.UseNow']}}</button>
+    <view slot="date">{{I18N_T['ant-mini-program-demo.component.coupon.ValidityPeriod']}}</view>
+    <view slot="detail" class="coupon_rule">
+      <text>{{I18N_T['ant-mini-program-demo.component.coupon.DetailedRuleDescriptionDetailedRule']}}</text>
+      <text>{{I18N_T['ant-mini-program-demo.component.coupon.DetailedRuleDescriptionDetailedRule.4']}}</text>
+    </view>
+  </coupon>
+</view>
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle.4']}}" subtitle="{{I18N_T['ant-mini-program-demo.component.coupon.CouponSubtitle']}}" onCouponClick="onCouponClick" extra="{{false}}">
+    <button shape="capsule" slot="action" onTap="onButtonTap" type="ghost">{{I18N_T['ant-mini-program-demo.component.coupon.UseNow']}}</button>
+    <view slot="date">{{I18N_T['ant-mini-program-demo.component.coupon.ValidityPeriod']}}</view>
+    <view slot="detail" class="coupon_rule">
+      <text>{{I18N_T['ant-mini-program-demo.component.coupon.DetailedRuleDescriptionDetailedRule']}}</text>
+      <text>{{I18N_T['ant-mini-program-demo.component.coupon.DetailedRuleDescriptionDetailedRule.4']}}</text>
+    </view>
+  </coupon>
+</view>
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle.5']}}" subtitle="{{I18N_T['ant-mini-program-demo.component.coupon.CouponSubtitle']}}" onCouponClick="onCouponClick" thumb="{{thumb}}">
+    <button shape="capsule" slot="action" onTap="onButtonTap" type="ghost">{{I18N_T['ant-mini-program-demo.component.coupon.UseNow']}}</button>
+  </coupon>
+</view>
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle.6']}}" subtitle="{{I18N_T['ant-mini-program-demo.component.coupon.CouponSubtitle']}}" moreBtn="{{I18N_T['ant-mini-program-demo.component.coupon.ViewMore']}}" moreHide="{{false}}" onCouponClick="onCouponClick" thumb="{{thumb}}">
+    <button shape="capsule" slot="action" onTap="onButtonTap" type="primary">{{I18N_T['ant-mini-program-demo.component.coupon.UseNow']}}</button>
+    <view slot="date">{{I18N_T['ant-mini-program-demo.component.coupon.ValidityPeriod']}}</view>
+    <view slot="detail" class="coupon_rule">
+      <text>{{I18N_T['ant-mini-program-demo.component.coupon.DetailedRuleDescriptionDetailedRule']}}</text>
+      <text>{{I18N_T['ant-mini-program-demo.component.coupon.DetailedRuleDescriptionDetailedRule.4']}}</text>
+    </view>
+  </coupon>
+</view>
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle.7']}}" subtitle="{{I18N_T['ant-mini-program-demo.component.coupon.CouponSubtitle']}}" onCouponClick="onCouponClick" thumb="{{thumb}}">
+    <am-checkbox slot="action" onTap="onButtonTap" />
+  </coupon>
+</view>
+<view>
+  <coupon title="{{I18N_T['ant-mini-program-demo.component.coupon.CouponTitle.8']}}" subtitle="{{I18N_T['ant-mini-program-demo.component.coupon.CouponSubtitle']}}" onCouponClick="onCouponClick" thumb="{{thumb}}">
+    <stepper slot="action" step="{{1}}" showNumber min="{{2}}" />
+  </coupon>
+</view>
+<view style="margin-top: 50px;" />

@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.API.animation.animation.AnimationApi']}}</view>
+  <view class="page-section">
+    <view class="page-section-title">my.createAnimation</view>
+    <view class="page-section-demo">
+      <view class="animation-element" animation="{{animation}}" />
+    </view>
+    <view class="page-section-btns">
+      <view type="primary" onTap="rotate">{{I18N_T['ant-mini-program-demo.API.animation.animation.Rotate']}}</view>
+      <view type="primary" onTap="scale">{{I18N_T['ant-mini-program-demo.API.animation.animation.Zoom']}}</view>
+      <view type="primary" onTap="translate">{{I18N_T['ant-mini-program-demo.API.animation.animation.Mobile']}}</view>
+    </view>
+    <view class="page-section-btns">
+      <view type="primary" onTap="skew">{{I18N_T['ant-mini-program-demo.API.animation.animation.Tilt']}}</view>
+      <view type="primary" onTap="rotateAndScale">{{I18N_T['ant-mini-program-demo.API.animation.animation.RotateAndZoom']}}</view>
+      <view type="primary" onTap="rotateThenScale">{{I18N_T['ant-mini-program-demo.API.animation.animation.ZoomAfterRotation']}}</view>
+    </view>
+    <view class="page-section-btns">
+      <view type="primary" onTap="all">{{I18N_T['ant-mini-program-demo.API.animation.animation.ShowAll']}}</view>
+      <view type="primary" onTap="allInQueue">{{I18N_T['ant-mini-program-demo.API.animation.animation.ShowAllInSequence']}}</view>
+      <view type="primary" onTap="reset">{{I18N_T['ant-mini-program-demo.API.animation.animation.Restore']}}</view>
+    </view>
+  </view>
+</view>

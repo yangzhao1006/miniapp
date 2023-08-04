@@ -1,0 +1,30 @@
+
+-------------------------------------------------------------------------------
+-------------------------- 👇 重要信息👇 --------------------------------
+  由于这些模板较为复杂，提取后会造成翻译不准确，所以建议进行手动处理
+  下边列出了所有模板的位置，你也可以在后边这个文件找他们:  /Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/i18n/unprocessed-code.js.txt 
+  后边的这个文档提供了怎么处理处理这些模板的方法:
+  http://gitlab.alibaba-inc.com/parrot/parrot-tool-must/blob/master/doc/es6tempale.md
+-------------------------------------------------------------------------------
+  
+ `下次进入应用时，此文件仍可用:${JSON.stringify(res)}` 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/API/file/file.js:47:21) 
+
+ `你选择的框架是 ${e.detail.value.libs.join(', ')}` 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/checkbox/checkbox.js:15:15) 
+
+ `数据：${JSON.stringify(e.detail.value)}` 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/form/form.js:6:15) 
+
+ `点击了：${JSON.stringify(dataset)}` 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/modal/modal.js:220:13) 
+
+ `点击了：${JSON.stringify(dataset)}` 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/modal/modal.js:242:13) 
+
+ `点击了：${JSON.stringify(dataset)}` 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/modal/modal.js:269:13) 
+
+ `点击了：${JSON.stringify(dataset)}` 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/modal/modal.js:291:13) 
+

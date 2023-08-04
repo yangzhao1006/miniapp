@@ -1,0 +1,3 @@
+<view class="page">
+  <view>{{I18N_T['ant-mini-program-demo.API.events.events.ClickTheTitleToTest']}}</view>
+</view>

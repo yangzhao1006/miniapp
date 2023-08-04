@@ -1,0 +1,19 @@
+<view>
+  <view style="margin-top: 10px;" />
+  <list>
+    <input-item data-field="cardNo" clear="{{false}}" value="{{cardNo}}" className="dadada" placeholder="{{I18N_T['ant-mini-program-demo.component.input-item.input-item.BankCardNumber']}}" onInput="onItemInput" onBlur="onItemBlur" onConfirm="onItemConfirm" controlled="{{true}}" onClear="onClear">{{I18N_T['ant-mini-program-demo.component.input-item.input-item.CardNumber']}}<view slot="extra" class="extra" onTap="onExtraTap" />
+    </input-item>
+    <input-item data-field="name" placeholder="{{I18N_T['ant-mini-program-demo.component.input-item.input-item.Name']}}" type="text" value="{{name}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">{{I18N_T['ant-mini-program-demo.component.input-item.input-item.Name']}}</input-item>
+    <input-item data-field="password" password="{{true}}" placeholder="{{I18N_T['ant-mini-program-demo.component.input-item.input-item.Password']}}">{{I18N_T['ant-mini-program-demo.component.input-item.input-item.Password']}}</input-item>
+    <input-item data-field="layerShow1" placeholder="{{I18N_T['ant-mini-program-demo.component.input-item.input-item.LayerIsVertical']}}" type="text" layer="vertical" value="{{layerShow1}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">{{I18N_T['ant-mini-program-demo.component.input-item.input-item.VerticalForm']}}<view onTap="onExtraTap" slot="extra">
+        <am-icon type="phone-book_" size="24" color="#1677ef" />
+      </view>
+    </input-item>
+    <input-item data-field="layerShow2" placeholder="{{I18N_T['ant-mini-program-demo.component.input-item.input-item.LayerIsVertical']}}" type="text" layer="vertical" value="{{layerShow2}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">{{I18N_T['ant-mini-program-demo.component.input-item.input-item.VerticalForm']}}</input-item>
+    <input-item data-field="layerShow3" placeholder="{{I18N_T['ant-mini-program-demo.component.input-item.input-item.LayerIsVertical']}}" type="text" layer="vertical" disabled="{{true}}" value="{{layerShow3}}" clear="{{true}}" onInput="onItemInput" onClear="onClear">{{I18N_T['ant-mini-program-demo.component.input-item.input-item.VerticalForm']}}<view onTap="onExtraTap" slot="extra">
+        <am-icon type="phone-book_" size="24" color="#1677ef" />
+      </view>
+    </input-item>
+    <input-item data-field="remark" placeholder="{{I18N_T['ant-mini-program-demo.component.input-item.input-item.Remarks']}}" />
+  </list>
+</view>

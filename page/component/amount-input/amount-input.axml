@@ -1,0 +1,3 @@
+<view>
+  <amount-input type="digit" title="{{I18N_T['ant-mini-program-demo.component.amount-input.amount-input.TransferredAmount']}}" extra="{{I18N_T['ant-mini-program-demo.component.amount-input.amount-input.WeRecommendThatYouTransfer']}}" placeholder="{{I18N_T['ant-mini-program-demo.component.amount-input.amount-input.InputAmount']}}" value="{{value}}" maxLength="10" focus="{{true}}" btnText="{{I18N_T['ant-mini-program-demo.component.amount-input.amount-input.WithdrawAllCash']}}" onClear="onInputClear" onInput="onInput" onButtonClick="onButtonClick" onConfirm="onInputConfirm" onBlur="onInputBlur" onFocus="onInputFocus" />
+</view>

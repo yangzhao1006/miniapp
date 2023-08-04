@@ -1,0 +1,23 @@
+<view class="demo-avatar">
+	<view style="margin-top: 10px;" />
+  <view class="demo-avatar-size-intro">{{I18N_T['ant-mini-program-demo.component.avatar.ThreeSizes']}}</view>
+  <view class="demo-avatar-size">
+    <view class="demo-avatar-size-container">
+      <avatar size="lg" />
+    </view>
+    <view class="demo-avatar-size-container">
+      <avatar />
+    </view>
+    <view class="demo-avatar-size-container">
+      <avatar size="sm" />
+    </view>
+  </view>
+  <view style="margin-top: 20px;" />
+  <view class="demo-avatar-content">
+    <avatar mode="widthFix" name="{{I18N_T['ant-mini-program-demo.component.avatar.Username']}}" desc="{{I18N_T['ant-mini-program-demo.component.avatar.SummaryInformation']}}" size="sm" />
+    <view style="margin-top: 20px;" />
+    <avatar name="{{I18N_T['ant-mini-program-demo.component.avatar.Username']}}" desc="{{I18N_T['ant-mini-program-demo.component.avatar.SummaryInformation']}}" size="md" />
+    <view style="margin-top: 20px;" />
+    <avatar name="{{I18N_T['ant-mini-program-demo.component.avatar.Username']}}" desc="{{I18N_T['ant-mini-program-demo.component.avatar.SummaryInformation']}}" size="lg" />
+  </view>
+</view>

@@ -1,0 +1,77 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.component.input.input.InputBox']}}</view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label">{{I18N_T['ant-mini-program-demo.component.input.input.ControlledFocus']}}</view>
+      <view class="form-row-content">
+        <input class="input" focus="{{focus}}" onFocus="onFocus" onBlur="onBlur" placeholder="input something" />
+      </view>
+    </view>
+    <view class="page-section-btns">
+      <button size="mini" onTap="bindButtonTap">{{I18N_T['ant-mini-program-demo.component.input.input.Focus']}}</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label"><label for="controlled">{{I18N_T['ant-mini-program-demo.component.input.input.DisplayInput']}}</label></view>
+      <view class="form-row-content">
+        <input class="input" id="controlled" onInput="bindKeyInput" placeholder="show input content" />
+      </view>
+    </view>
+    <view class="extra-info">{{I18N_T['ant-mini-program-demo.component.input.input.inputText']}}：{{inputValue}}</view>
+  </view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label">{{I18N_T['ant-mini-program-demo.component.input.input.MaximumLength']}}</view>
+      <view class="form-row-content">
+        <input class="input" maxlength="10" placeholder="maxlength 10" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">{{I18N_T['ant-mini-program-demo.component.input.input.HideTheKeyboard']}}</view>
+      <view class="form-row-content">
+        <input class="input" onInput="bindHideKeyboard" placeholder="{{I18N_T['ant-mini-program-demo.component.input.input.EnterToAutomaticallyCloseThe']}}" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">{{I18N_T['ant-mini-program-demo.component.input.input.EnterAPassword']}}</view>
+      <view class="form-row-content">
+        <input class="input" password type="text" placeholder="{{I18N_T['ant-mini-program-demo.component.input.input.PasswordInputBox']}}" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">{{I18N_T['ant-mini-program-demo.component.input.input.EnterANumber']}}</view>
+      <view class="form-row-content">
+        <input class="input" type="number" placeholder="{{I18N_T['ant-mini-program-demo.component.input.input.DigitalInputBox']}}" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">{{I18N_T['ant-mini-program-demo.component.input.input.DecimalPointKeyboard']}}</view>
+      <view class="form-row-content">
+        <input class="input" type="digit" placeholder="{{I18N_T['ant-mini-program-demo.component.input.input.NumericKeyboardWithDecimalPoint']}}" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">{{I18N_T['ant-mini-program-demo.component.input.input.IdCardKeyboard']}}</view>
+      <view class="form-row-content">
+        <input class="input" type="idcard" placeholder="{{I18N_T['ant-mini-program-demo.component.input.input.IdCardInputKeyboard']}}" />
+      </view>
+    </view>
+  </view>
+
+
+  <view class="page-section">
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.component.input.input.SearchBox']}}</view>
+    <view class="page-section-demo">
+      <view class="search-outer">
+        <input class="search-input" placeholder="{{I18N_T['ant-mini-program-demo.component.input.input.Search']}}" value="{{search}}" onConfirm="doneSearch" onInput="handleSearch" />
+        <text class="search-cancel" onTap="clearSearch">{{I18N_T['ant-mini-program-demo.component.input.input.Cancel']}}</text>
+      </view>
+    </view>
+  </view>
+</view>

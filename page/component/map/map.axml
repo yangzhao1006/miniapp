@@ -1,0 +1,35 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" onControlTap="controltap" markers="{{markers}}" onMarkerTap="markertap" polyline="{{polyline}}" polygon="{{polygon}}" circles="{{circles}}" onRegionChange="regionchange" onTap="tap" onCalloutTap="callouttap" show-location style="width: 100%; height: 200px;" include-points="{{includePoints}}" ground-overlays="{{ground-overlays}}">
+      </map>
+    </view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoResetMap">{{I18N_T['ant-mini-program-demo.component.map.map.Restore']}}</view>
+    <view onTap="demoGetCenterLocation">{{I18N_T['ant-mini-program-demo.component.map.map.ObtainCenterPointCoordinates']}}</view>
+    <view onTap="demoMoveToLocation">{{I18N_T['ant-mini-program-demo.component.map.map.ReturnToAnchorPoint']}}</view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoMarkerAnimation">{{I18N_T['ant-mini-program-demo.component.map.map.MarkerAnimation']}}</view>
+    <view onTap="demoMarkerLabel">Label</view>
+    <view onTap="demoMarkerCustomCallout">CustomCallout</view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoMarkerAppendStr">{{I18N_T['ant-mini-program-demo.component.map.map.TextMarker']}}</view>
+    <view onTap="demoTrafficOverlay">{{I18N_T['ant-mini-program-demo.component.map.map.RoadConditionDisplay']}}</view>
+    <view onTap="demoShowRoute">{{I18N_T['ant-mini-program-demo.component.map.map.WalkingRoutePlanning']}}</view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoCompass">{{I18N_T['ant-mini-program-demo.component.map.map.Compass']}}</view>
+    <view onTap="demoScale">{{I18N_T['ant-mini-program-demo.component.map.map.Scale']}}</view>
+    <view onTap="demoGesture">{{I18N_T['ant-mini-program-demo.component.map.map.Gesture']}}</view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="demoPolyline">{{I18N_T['ant-mini-program-demo.component.map.map.Line']}}</view>
+    <view onTap="demoPolygon">{{I18N_T['ant-mini-program-demo.component.map.map.Polygon']}}</view>
+    <view onTap="demoCircle">{{I18N_T['ant-mini-program-demo.component.map.map.Round']}}</view>
+  </view>
+  <view class="page-section-btns">
+  </view>
+</view>

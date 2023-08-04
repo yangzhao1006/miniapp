@@ -1,0 +1,36 @@
+<view class="video-page">
+
+    <view class="video-contain">
+        <audio id="myAudio" />
+    </view>
+    <view class="video-contain">
+        <audio id="audio2" />
+    </view>
+    <view class="operation-item" style="background-color:lightblue">{{title}}</view>
+    <view class="operation-item" onTap="play">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.Play']}}</view>
+    <view class="operation-item" onTap="pause">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.Pause']}}</view>
+    <view class="operation-item" onTap="seek">seek{{seek}}s{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.PlayText']}}</view>
+    <view class="operation-item" onTap="stop">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.StopPlayback']}}</view>
+    <view class="operation-item" onTap="destroy">destroy</view>
+    <view class="operation-item" onTap="getAllProps">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.DisplayProperties']}}</view>
+
+    <picker onChange="offCallback" value="{{callbackIndex}}" range="{{callbackArr}}">
+        <view class="row">
+          <view class="row-title">offCallback</view>
+          <view class="row-extra">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.SelectionText']}}：{{callback}}</view>
+        </view>
+    </picker>
+
+    
+    <view class="operation-item" onTap="play2">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.PlayAudio']}}</view>
+    <view class="operation-item" onTap="pause2">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.PauseAudio']}}</view>
+    <view class="operation-item" onTap="getAllProps2">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.DisplayAttribute']}}</view>
+
+    <picker onChange="offCallback2" value="{{callback2Index}}" range="{{callback2Arr}}">
+        <view class="row">
+          <view class="row-title">offCallback</view>
+          <view class="row-extra">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.SelectionText']}}：{{callback2}}</view>
+        </view>
+    </picker>
+
+</view>

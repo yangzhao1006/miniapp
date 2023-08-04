@@ -1,0 +1,6 @@
+<view>
+  <view style="margin-top: 10px;" />
+  <view style="padding: 0 10px;">{{I18N_T['ant-mini-program-demo.component.verify-code.VerificationCodeBox']}}</view>
+  <view style="margin-top: 10px;" />
+  <verify-code data-field="verifyCode" onInput="onInput" value="{{verifyCode}}" onClear="onClear" last="{{true}}" countDown="{{10}}" onSend="onSend" />
+</view>

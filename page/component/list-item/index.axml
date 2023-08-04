@@ -1,0 +1,118 @@
+<view class="new-list-container">
+  <list>
+    <view slot="header">New List Demo</view>
+    <list-item thumb="{{useThumb ? thumb : ''}}" arrow="{{arrow}}" index="{{index}}" borderRadius="{{borderRadius}}" upperSubtitle="{{upperSubtitle}}" lowerSubtitle="{{lowerSubtitle}}" titlePosition="{{titlePositions[titlePosIndex]}}" thumbSize="{{thumbSize}}" last="{{true}}">
+        {{title}}
+        <tag a:if="{{primarySlotTypes[titleSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}" size="sm" slot="afterTitle">{{titleTagText}}</tag>
+        <tag a:if="{{primarySlotTypes[upperSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}" size="sm" slot="afterUpperSubtitle">{{upperTagText}}</tag>
+        <tag a:if="{{primarySlotTypes[lowerSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}" size="sm" slot="afterLowerSubtitle">{{lowerTagText}}</tag>
+        <am-icon a:if="{{primarySlotTypes[titleSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon']}}" size="{{titleIconSize}}" type="question_" slot="afterTitle" color="#1677ff" />
+        <am-icon a:if="{{primarySlotTypes[upperSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon']}}" size="{{upperIconSize}}" type="question_" slot="afterUpperSubtitle" color="#1677ff" />
+        <am-icon a:if="{{primarySlotTypes[lowerSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon']}}" size="{{lowerIconSize}}" type="question_" slot="afterLowerSubtitle" color="#1677ff" />
+
+        <am-icon a:if="{{supSlotTypes[supSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon']}}" type="question_" slot="supporting" color="#1677ff" size="{{supIconSize}}" />
+        <am-radio checked="{{true}}" a:if="{{supSlotTypes[supSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.TickIcon']}}" slot="supporting" />
+        <tag a:if="{{supSlotTypes[supSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}" size="sm" slot="supporting">{{supTagText}}</tag>
+        <view a:if="{{supSlotTypes[supSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.3']}}" slot="supporting">{{supText}}</view>
+        
+        <am-icon a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon']}}" type="question_" slot="extra" color="#1677ff" size="{{secIconSize}}" />
+        <am-radio checked="{{true}}" a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.TickIcon']}}" slot="extra" />
+        <tag a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}" size="sm" slot="extra">{{secTagText}}</tag>
+        <view a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.3']}}" slot="extra">{{secText}}</view>
+        <am-switch a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Switch']}}" slot="extra" />
+        <am-button a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.CapsuleButton']}}" shape="capsule" type="ghost" slot="extra">{{secText}}</am-button>
+        <list-secondary a:if="{{secSlotTypes[secSlotIndex] === 'list-secondary'}}" title="{{secondary.title}}" subtitle="{{secondary.subtitle}}" thumb="{{secondary.useThumb ? secondary.thumb : ''}}" thumbSize="{{secondary.thumbSize}}" slot="extra" />
+    </list-item>
+  </list>
+  <view class="gap" />
+  <view class="setting">
+    <list-item>{{I18N_T['ant-mini-program-demo.component.list-item.Rounded']}}<am-switch slot="extra" checked="{{borderRadius}}" onChange="setInfo" data-name="borderRadius" controlled />
+    </list-item>
+    <view class="gap" />
+    <title>{{I18N_T['ant-mini-program-demo.component.list-item.PrimaryRegionSettings']}}</title>
+    <list-item>{{I18N_T['ant-mini-program-demo.component.list-item.Thumbnail']}}<am-switch slot="extra" checked="{{useThumb}}" onChange="setInfo" data-name="useThumb" controlled />
+    </list-item>
+    <input-item a:if="{{useThumb}}" placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.Automatic']}}" value="{{thumbSize}}" onInput="setInfo" data-name="thumbSize">{{I18N_T['ant-mini-program-demo.component.list-item.ThumbnailSize']}}<view slot="extra">px</view>
+    </input-item> 
+    <view class="gap" />
+    <list-item>{{I18N_T['ant-mini-program-demo.component.list-item.Arrow']}}<am-switch slot="extra" checked="{{arrow}}" onChange="setInfo" data-name="arrow" controlled />
+    </list-item>
+    <view class="gap" />
+    <picker onChange="setInfo" value="{{titlePosIndex}}" range="{{titlePositions}}" data-name="titlePosIndex">
+      <view class="row">
+        <view class="row-title">{{I18N_T['ant-mini-program-demo.component.list-item.TitlePosition']}}</view>
+        <view class="row-extra">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.SelectionText']}}：{{titlePositions[titlePosIndex]}}</view>
+        <am-icon type="right" size="18" color="#cccc" />
+      </view>
+    </picker>
+    <view class="gap" />
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{title}}" onInput="setInfo" data-name="title">{{I18N_T['ant-mini-program-demo.component.list-item.Title']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{upperSubtitle}}" onInput="setInfo" data-name="upperSubtitle">{{I18N_T['ant-mini-program-demo.component.list-item.SubtitleContent']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{lowerSubtitle}}" onInput="setInfo" data-name="lowerSubtitle">{{I18N_T['ant-mini-program-demo.component.list-item.Subtitle']}}</input-item>
+    <view class="gap" />
+    <picker onChange="setInfo" value="{{titleSlotIndex}}" range="{{primarySlotTypes}}" data-name="titleSlotIndex">
+      <view class="row">
+        <view class="row-title">{{I18N_T['ant-mini-program-demo.component.list-item.TitleSlotContent']}}</view>
+        <view class="row-extra">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.SelectionText']}}：{{primarySlotTypes[titleSlotIndex]}}</view>
+        <am-icon type="right" size="18" color="#cccc" />
+      </view>
+    </picker>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{titleTagText}}" onInput="setInfo" data-name="titleTagText" a:if="{{primarySlotTypes[titleSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}">{{I18N_T['ant-mini-program-demo.component.list-item.TagContent']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.Automatic']}}" value="{{titleIconSize}}" onInput="setInfo" data-name="titleIconSize" a:if="{{primarySlotTypes[titleSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon']}}">{{I18N_T['ant-mini-program-demo.component.list-item.IconSize']}}</input-item>
+    <view class="gap" />
+    <picker onChange="setInfo" value="{{upperSlotIndex}}" range="{{primarySlotTypes}}" data-name="upperSlotIndex">
+      <view class="row">
+        <view class="row-title">{{I18N_T['ant-mini-program-demo.component.list-item.SubtitleSlot']}}</view>
+        <view class="row-extra">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.SelectionText']}}：{{primarySlotTypes[upperSlotIndex]}}</view>
+        <am-icon type="right" size="18" color="#cccc" />
+      </view>
+    </picker>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.Automatic']}}" value="{{upperTagText}}" onInput="setInfo" data-name="upperTagText" a:if="{{primarySlotTypes[upperSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}">{{I18N_T['ant-mini-program-demo.component.list-item.TagContent']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.Automatic']}}" value="{{upperIconSize}}" onInput="setInfo" data-name="upperIconSize" a:if="{{primarySlotTypes[upperSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon']}}">{{I18N_T['ant-mini-program-demo.component.list-item.IconSize']}}</input-item>
+    <view class="gap" />
+    <picker onChange="setInfo" value="{{lowerSlotIndex}}" range="{{primarySlotTypes}}" data-name="lowerSlotIndex">
+      <view class="row">
+        <view class="row-title">{{I18N_T['ant-mini-program-demo.component.list-item.SubtitleSlot.1']}}</view>
+        <view class="row-extra">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.SelectionText']}}：{{primarySlotTypes[lowerSlotIndex]}}</view>
+        <am-icon type="right" size="18" color="#cccc" />
+      </view>
+    </picker>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.Automatic']}}" value="{{lowerTagText}}" onInput="setInfo" data-name="lowerTagText" a:if="{{primarySlotTypes[lowerSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}">{{I18N_T['ant-mini-program-demo.component.list-item.TagContent']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.Automatic']}}" value="{{lowerIconSize}}" onInput="setInfo" data-name="lowerIconSize" a:if="{{primarySlotTypes[lowerSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon']}}">{{I18N_T['ant-mini-program-demo.component.list-item.IconSize']}}</input-item>
+    <view class="gap" />
+    <view class="gap" />
+    <title>{{I18N_T['ant-mini-program-demo.component.list-item.SecondaryRegionSettings']}}</title>
+    <picker onChange="setInfo" value="{{secSlotIndex}}" range="{{secSlotTypes}}" data-name="secSlotIndex">
+      <view class="row">
+        <view class="row-title">{{I18N_T['ant-mini-program-demo.component.list-item.SecondarySlot']}}</view>
+        <view class="row-extra">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.SelectionText']}}：{{secSlotTypes[secSlotIndex]}}</view>
+        <am-icon type="right" size="18" color="#cccc" />
+      </view>
+    </picker>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.Automatic']}}" value="{{secIconSize}}" onInput="setInfo" data-name="secIconSize" a:if="{{secSlotTypes[secSlotIndex].includes(I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon'])}}">{{I18N_T['ant-mini-program-demo.component.list-item.IconSize']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{secTagText}}" onInput="setInfo" data-name="secTagText" a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}">{{I18N_T['ant-mini-program-demo.component.list-item.TagContent']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{secText}}" onInput="setInfo" data-name="secText" a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.3']}}">{{I18N_T['ant-mini-program-demo.component.list-item.TextContent']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{secText}}" onInput="setInfo" data-name="secText" a:if="{{secSlotTypes[secSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.CapsuleButton']}}">{{I18N_T['ant-mini-program-demo.component.list-item.ButtonContent']}}</input-item>
+    <view a:if="{{secSlotTypes[secSlotIndex] === 'list-secondary'}}">
+      <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{secondary.title}}" onInput="setSecInfo" data-name="title">{{I18N_T['ant-mini-program-demo.component.list-item.Title.1']}}</input-item>
+      <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{secondary.subtitle}}" onInput="setSecInfo" data-name="subtitle">{{I18N_T['ant-mini-program-demo.component.list-item.Subtitle.1']}}</input-item>
+      <list-item>{{I18N_T['ant-mini-program-demo.component.list-item.Thumbnail']}}<am-switch slot="extra" checked="{{secondary.useThumb}}" onChange="setSecInfo" data-name="useThumb" controlled />
+      </list-item>
+      <input-item a:if="{{secondary.useThumb}}" placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{secondary.thumbSize}}" onInput="setSecInfo" data-name="thumbSize">{{I18N_T['ant-mini-program-demo.component.list-item.ThumbnailSize.1']}}<view slot="extra">px</view>
+      </input-item>
+    </view>
+    <view class="gap" />
+    <view class="gap" />
+    <title>{{I18N_T['ant-mini-program-demo.component.list-item.SupportingRegionSettings']}}</title>
+    <picker onChange="setInfo" value="{{supSlotIndex}}" range="{{supSlotTypes}}" data-name="supSlotIndex">
+      <view class="row">
+        <view class="row-title">{{I18N_T['ant-mini-program-demo.component.list-item.SupportingSlot']}}</view>
+        <view class="row-extra">{{I18N_T['ant-mini-program-demo.API.create-inner-audiocontext.create-inner-audiocontext.SelectionText']}}：{{supSlotTypes[supSlotIndex]}}</view>
+        <am-icon type="right" size="18" color="#cccc" />
+      </view>
+    </picker>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.Automatic']}}" value="{{supIconSize}}" onInput="setInfo" data-name="supIconSize" a:if="{{supSlotTypes[supSlotIndex].includes(I18N_T['ant-mini-program-demo.component.list-item.QuestionMarkIcon'])}}">{{I18N_T['ant-mini-program-demo.component.list-item.IconSize']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{supTagText}}" onInput="setInfo" data-name="supTagText" a:if="{{supSlotTypes[supSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.Tag']}}">{{I18N_T['ant-mini-program-demo.component.list-item.TagContent']}}</input-item>
+    <input-item placeholder="{{I18N_T['ant-mini-program-demo.component.list-item.None']}}" value="{{supText}}" onInput="setInfo" data-name="supText" a:if="{{supSlotTypes[supSlotIndex] === I18N_T['ant-mini-program-demo.component.list-item.3']}}">{{I18N_T['ant-mini-program-demo.component.list-item.TextContent']}}</input-item>
+  </view>
+</view>

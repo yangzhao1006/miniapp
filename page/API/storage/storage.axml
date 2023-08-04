@@ -1,0 +1,29 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.API.storage.storage.DataStorageApi']}}</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <input type="text" placeholder="key" name="key" value="{{key}}" onInput="keyChange" />
+      <input type="text" placeholder="data" name="data" value="{{data}}" onInput="dataChange" />
+    </view>
+    <view class="page-section-btns">
+      <view onTap="setStorage">{{I18N_T['ant-mini-program-demo.API.storage.storage.StorageData']}}</view>
+      <view onTap="getStorage">{{I18N_T['ant-mini-program-demo.API.storage.storage.ReadData']}}</view>
+      <view onTap="removeStorage">{{I18N_T['ant-mini-program-demo.API.storage.storage.DeleteData']}}</view>
+      <view onTap="clearStorage">{{I18N_T['ant-mini-program-demo.API.storage.storage.ClearData']}}</view>
+      <view onTap="getStorageInfo">{{I18N_T['ant-mini-program-demo.API.storage.storage.ObtainDataInformation']}}</view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <input type="text" placeholder="key" name="keySync" value="{{keySync}}" onInput="keyChangeSync" />
+      <input type="text" placeholder="data" name="dataSync" value="{{dataSync}}" onInput="dataChangeSync" />
+    </view>
+    <view class="page-section-btns">
+      <view onTap="setStorageSync">{{I18N_T['ant-mini-program-demo.API.storage.storage.SynchronouslyStoreData']}}</view>
+      <view onTap="getStorageSync">{{I18N_T['ant-mini-program-demo.API.storage.storage.ReadDataSynchronously']}}</view>
+      <view onTap="removeStorageSync">{{I18N_T['ant-mini-program-demo.API.storage.storage.SynchronouslyDeleteData']}}</view>
+      <view onTap="clearStorageSync">{{I18N_T['ant-mini-program-demo.API.storage.storage.SynchronouslyClearData']}}</view>
+      <view onTap="getStorageInfoSync">{{I18N_T['ant-mini-program-demo.API.storage.storage.SynchronouslyObtainDataInformation']}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<guide show="{{guideShow}}" hasJump="{{guideJump}}" guideList="{{list}}" btn_next="{{I18N_T['ant-mini-program-demo.component.guide.guide.LookAtTheNextGuide']}}" btn_jump="{{I18N_T['ant-mini-program-demo.component.guide.guide.CloseDirectlySkipWithoutWatching']}}" btn_over="{{I18N_T['ant-mini-program-demo.component.guide.guide.FinishedReadingAh']}}" onGuideOver="closeGuide" />
+
+<button size="default" type="primary" onTap="onShowJumpGuide">{{I18N_T['ant-mini-program-demo.component.guide.guide.ViewTheGuideChartsThat']}}</button>
+<button size="default" type="primary" onTap="onShowGuide">{{I18N_T['ant-mini-program-demo.component.guide.guide.ViewCommonGuideCharts']}}</button>

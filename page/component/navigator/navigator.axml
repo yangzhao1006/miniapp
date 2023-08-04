@@ -1,0 +1,8 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.component.navigator.navigator.NavigationBar']}}</view>
+  <navigator open-type="navigate" url="./navigate" hover-class="navigator-hover">{{I18N_T['ant-mini-program-demo.component.navigator.navigator.GoToTheNewPage']}}</navigator>
+  <navigator open-type="redirect" url="./redirect" hover-class="navigator-hover">{{I18N_T['ant-mini-program-demo.component.navigator.navigator.OpenOnTheCurrentPage']}}</navigator>
+  <navigator open-type="switchTab" url="/page/tabBar/API/index" hover-class="navigator-hover">{{I18N_T['ant-mini-program-demo.component.navigator.navigator.JumpToAnotherTabApi']}}</navigator>
+  <navigator open-type="reLaunch" url="/page/tabBar/component/index" hover-class="navigator-hover">{{I18N_T['ant-mini-program-demo.component.navigator.navigator.Reopen']}}</navigator>
+  <navigator open-type="navigateBack" hover-class="navigator-hover">{{I18N_T['ant-mini-program-demo.component.navigator.navigator.ReturnToPreviousPage']}}</navigator>
+</view>

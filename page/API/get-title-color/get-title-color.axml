@@ -1,0 +1,10 @@
+<view>
+  <view class="page-section-demo">
+    <text>{{I18N_T['ant-mini-program-demo.API.get-title-color.get-title-color.TheBackgroundColorOfThe']}}</text>
+    <input type="text" disabled="{{true}}" value="{{titleColor.color}}">
+    </input>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="getTitleColor">{{I18N_T['ant-mini-program-demo.API.get-title-color.get-title-color.ObtainTheBackgroundColorOf']}}</view>
+  </view>
+</view>

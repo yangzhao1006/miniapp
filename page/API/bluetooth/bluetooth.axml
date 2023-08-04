@@ -1,0 +1,46 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.BluetoothApi']}}</view>
+  <view class="page-section">
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.BluetoothSwitchStatus']}}</view>
+    <view class="page-section-demo">
+       <button type="primary" onTap="openBluetoothAdapter">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.InitializeBluetooth']}}</button>
+       <button type="primary" onTap="closeBluetoothAdapter">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.TurnOffBluetooth']}}</button>
+       <button type="primary" onTap="getBluetoothAdapterState">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ObtainTheBluetoothStatus']}}</button>
+    </view>
+
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ScanBluetoothDevice']}}</view>
+    <view class="page-section-demo">
+       <button type="primary" onTap="startBluetoothDevicesDiscovery">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.StartSearch']}}</button>
+       <button type="primary" onTap="getBluetoothDevices">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.AllSearchedDevices']}}</button>
+       <button type="primary" onTap="getConnectedBluetoothDevices">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.AllConnectedDevices']}}</button>
+       <button type="primary" onTap="stopBluetoothDevicesDiscovery">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.StopSearch']}}</button>
+    </view>
+
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ConnectDevices']}}</view>
+    <view class="page-section-demo">
+       <input class="input" onInput="bindKeyInput" type="{{text}}" placeholder="{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.EnterTheDeviceidOfThe']}}" />
+       <button type="primary" onTap="connectBLEDevice">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ConnectDevices']}}</button>
+       <button type="primary" onTap="getBLEDeviceServices">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ObtainDeviceServices']}}</button>
+       <button type="primary" onTap="getBLEDeviceCharacteristics">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ObtainReadWriteFeatures']}}</button>
+       <button type="primary" onTap="disconnectBLEDevice">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.DisconnectTheDevice']}}</button>
+    </view>
+
+     <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ReadWriteData']}}</view>
+     <view class="page-section-demo">
+       <button type="primary" onTap="notifyBLECharacteristicValueChange">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ListenToFeatureValueData']}}</button>
+       <button type="primary" onTap="readBLECharacteristicValue">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.ReadData']}}</button>
+       <button type="primary" onTap="writeBLECharacteristicValue">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.WriteData']}}</button>
+       <button type="primary" onTap="offBLECharacteristicValueChange">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.CancelFeatureValueListening']}}</button>
+    </view>
+
+     <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.OtherEvents']}}</view>
+     <view class="page-section-demo">
+       <button type="primary" onTap="bluetoothAdapterStateChange">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.BluetoothStatusChanges']}}</button>
+       <button type="primary" onTap="offBluetoothAdapterStateChange">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.CancelBluetoothStatusMonitoring']}}</button>
+       <button type="primary" onTap="BLEConnectionStateChanged">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.BluetoothConnectionStatusChanges']}}</button>
+       <button type="primary" onTap="offBLEConnectionStateChanged">{{I18N_T['ant-mini-program-demo.API.bluetooth.bluetooth.CancelBluetoothConnectionStatusMonitoring']}}</button>
+       
+    </view>
+
+  </view>
+</view>

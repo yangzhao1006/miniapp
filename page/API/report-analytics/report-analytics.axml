@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.API.report-analytics.report-analytics.CustomAnalysisApi']}}</view>
+  <view class="page-section">
+    <view class="page-section-title">my.reportAnalytics</view>
+    <view class="page-section-demo">
+      <view class="report" onTap="reportAnalytics">{{I18N_T['ant-mini-program-demo.API.report-analytics.report-analytics.CustomAnalysis']}}</view>
+    </view>
+  </view>
+</view>

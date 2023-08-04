@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.API.file.file.FileApi']}}</view>
+  <view class="page-section">
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.file.file.SelectAFile']}}</view>
+    <block a:if="{{tempFilePath != ''}}">
+      <image src="{{tempFilePath}}" class="image" />
+    </block>
+    <block a:if="{{tempFilePath === '' && savedFilePath != ''}}">
+      <image src="{{savedFilePath}}" class="image" />
+    </block>
+    <block a:if="{{tempFilePath === '' && savedFilePath === ''}}">
+      <view class="image-plus" onTap="chooseImage">
+        <view class="image-plus-horizontal" />
+        <view class="image-plus-vertical" />
+      </view>
+    </block>
+    <view class="page-section-demo">
+      <button class="page-body-button" type="primary" onTap="saveFile">{{I18N_T['ant-mini-program-demo.API.file.file.SaveFile']}}</button>
+      <button class="page-body-button" type="primary" onTap="getFileInfo">{{I18N_T['ant-mini-program-demo.API.file.file.ObtainFileInformation']}}</button>
+      <button class="page-body-button" type="primary" onTap="getSavedFileInfo">{{I18N_T['ant-mini-program-demo.API.file.file.ObtainSavedFileInformation']}}</button>
+      <button class="page-body-button" type="primary" onTap="getSavedFileList">{{I18N_T['ant-mini-program-demo.API.file.file.ObtainsAListOfSaved']}}</button>
+      <button class="page-body-button" type="primary" onTap="removeSavedFile">{{I18N_T['ant-mini-program-demo.API.file.file.RemoveSavedFiles']}}</button>
+      <!-- <button class="page-body-button" type="primary" onTap="openDocument">预览文件</button> -->
+      <button class="page-body-button" onTap="clear">{{I18N_T['ant-mini-program-demo.API.file.file.DeleteAnObject']}}</button>
+    </view>
+  </view>
+</view>

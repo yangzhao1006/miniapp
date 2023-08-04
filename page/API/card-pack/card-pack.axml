@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.CardPackageApi']}}</view>
+  <view class="page-section">
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.CardCouponTicketListPage']}}</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="openCardList">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.OpenTheCardList']}}</button>
+      <button type="primary" onTap="openVoucherList">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.OpenTheCouponList']}}</button>
+      <button type="primary" onTap="openTicketList">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.InvoicingList']}}</button>
+    </view>
+
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.CardCouponTicketDetailsPage']}}</view>
+    <view class="page-section-demo">
+       <button type="primary" onTap="openCardDetail">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.OpenTheCardDetailsPage']}}</button>
+       <button type="primary" onTap="openVoucherDetail">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.OpenTheCouponDetailsPage']}}</button>
+       <button type="primary" onTap="openTicketDetail">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.InvoicingDetailsPage']}}</button>
+       <button type="primary" onTap="openKBVoucherDetail">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.OpenKoubeiCouponDetails']}}</button>
+       <button type="primary" onTap="gotoDetail">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.EnterKoubeiCustomerCardCoupon']}}</button>
+    </view>
+
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.CardCouponTicketMerchantList']}}</view>
+    <view class="page-section-demo">
+       <button type="primary" onTap="openMerchantCardList">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.OpenTheCardMerchantList']}}</button>
+       <button type="primary" onTap="openMerchantVoucherList">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.OpenTheBrokerListPage']}}</button>
+       <button type="primary" onTap="openMerchantTicketList">{{I18N_T['ant-mini-program-demo.API.card-pack.card-pack.ListOfInvoicingMerchants']}}</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.component.switch-ali-ui.Switch']}}</view>
+  <view class="page-section">
+    <view class="page-section-demo switch-list">
+      <view class="switch-item">
+        <am-switch checked onChange="switch1Change" />
+      </view>
+      <view class="switch-item">
+        <am-switch color="red" checked />
+      </view>
+    </view>
+  </view>
+</view>

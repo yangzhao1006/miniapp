@@ -1,0 +1,7 @@
+<!-- audio.wxml -->
+<button onTap="audioPlay">{{I18N_T['ant-mini-program-demo.API.get-background-audio-manager.get-background-audio-manager.Play']}}</button>
+<button onTap="audioPause">{{I18N_T['ant-mini-program-demo.API.get-background-audio-manager.get-background-audio-manager.Pause']}}</button>
+<button onTap="audioStop">{{I18N_T['ant-mini-program-demo.API.get-background-audio-manager.get-background-audio-manager.Stop']}}</button>
+<button onTap="audio14">{{I18N_T['ant-mini-program-demo.API.get-background-audio-manager.get-background-audio-manager.SeekToSeconds']}}</button>
+<button onTap="audioStart">{{I18N_T['ant-mini-program-demo.API.get-background-audio-manager.get-background-audio-manager.Seek']}}</button>
+<button onTap="getAllProps">{{I18N_T['ant-mini-program-demo.API.get-background-audio-manager.get-background-audio-manager.ObtainBackgroundAudioAttributes']}}</button>

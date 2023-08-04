@@ -1,0 +1,15 @@
+{
+  "name": "ant-mini-program-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "i18next": "^21.6.12",
+    "mini-ali-ui": "^1.4.1"
+  }
+}

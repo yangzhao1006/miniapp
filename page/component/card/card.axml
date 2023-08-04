@@ -1,0 +1,13 @@
+<view class="container">
+  <card title="{{I18N_T['ant-mini-program-demo.component.card.card.CardTitle']}}" onCardClick="onCardClick" info="{{I18N_T['ant-mini-program-demo.component.card.card.ClickTheFirstCard']}}" />
+  <view style="margin-top: 10px;" />
+  <card thumb="{{thumb}}" title="{{I18N_T['ant-mini-program-demo.component.card.card.CardTitle.1']}}" subTitle="{{I18N_T['ant-mini-program-demo.component.card.card.SubtitleIsNotRequired']}}" onCardClick="onCardClick" info="{{I18N_T['ant-mini-program-demo.component.card.card.ClickTheSecondCard']}}" />
+  <view style="margin-top: 10px;" />
+  <view>
+    <card thumb="{{thumb}}" title="{{I18N_T['ant-mini-program-demo.component.card.card.CardTitle.3']}}" subTitle="{{I18N_T['ant-mini-program-demo.component.card.card.SubtitleIsNotRequired.2']}}" onCardClick="toggle" action="{{I18N_T['ant-mini-program-demo.component.card.card.Description']}}" onActionClick="onActionClick" extraAction="{{I18N_T['ant-mini-program-demo.component.card.card.ClickTheCardToExpand']}}" onExtraActionClick="onExtraActionClick" info="{{I18N_T['ant-mini-program-demo.component.card.card.ClickTheThirdCard']}}" expand="{{expand3rd}}" bgImg="https://gw.alipayobjects.com/mdn/rms_ce4c6f/afts/img/A*OjyRRqjLM6MAAAAAAAAAAABkARQnAQ" />
+  </view>
+  <view style="margin-top: 10px;" />
+  <view>
+    <card thumb="{{thumb}}" title="{{I18N_T['ant-mini-program-demo.component.card.card.CardTitle.3']}}" subTitle="{{I18N_T['ant-mini-program-demo.component.card.card.SubtitleIsNotRequired.2']}}" onCardClick="onCardClick" info="{{I18N_T['ant-mini-program-demo.component.card.card.ClickTheThirdCard']}}" bgImg="https://gw.alipayobjects.com/mdn/rms_ce4c6f/afts/img/A*OjyRRqjLM6MAAAAAAAAAAABkARQnAQ" expand />
+  </view>
+</view>

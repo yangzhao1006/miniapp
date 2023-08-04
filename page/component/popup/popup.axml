@@ -1,0 +1,25 @@
+<view>
+  <view class="btn-container">
+    <button onTap="onTopBtnTap">{{I18N_T['ant-mini-program-demo.component.popup.popup.Upper']}}</button>
+    <button onTap="onButtomBtnTap">{{I18N_T['ant-mini-program-demo.component.popup.popup.Next']}}</button>
+    <button onTap="onRightBtnTap">{{I18N_T['ant-mini-program-demo.component.popup.popup.RightWithoutMask']}}</button>
+    <button onTap="onLeftBtnTap">{{I18N_T['ant-mini-program-demo.component.popup.popup.LeftWithoutAnimation']}}</button>
+  </view>
+  <popup show="{{showLeft}}" animation="{{false}}" position="left" onClose="onPopupClose">
+    <view class="box left">hello world</view>
+  </popup>
+  <popup show="{{showRight}}" position="right" mask="{{false}}" onClose="onPopupClose">
+    <view class="box right" style="display: flex; flex-direction: column;">
+      <view>hello world</view>
+      <view style="margin-top: 20px;">
+        <button onTap="onPopupClose" style="width: 100px;">{{I18N_T['ant-mini-program-demo.component.popup.popup.Close']}}</button>
+      </view>
+    </view>
+  </popup>
+  <popup show="{{showTop}}" position="top" onClose="onPopupClose">
+    <view class="box top">hello world</view>
+  </popup>
+  <popup show="{{showBottom}}" position="bottom" onClose="onPopupClose">
+    <view class="box bottom">hello world</view>
+  </popup>
+</view>

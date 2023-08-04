@@ -1,0 +1,41 @@
+<view class="demo-item">
+  <notice marqueeProps="{{marqueeProps}}" enableMarquee="{{true}}" show="{{closeShow}}" type="{{noticeType}}" mode="{{noticeMode}}" action="{{actionText}}" onClick="actionClick" actionLeft="{{actionLeftText}}" onClickLeft="linkActionClick">{{I18N_T['ant-mini-program-demo.component.notice.notice.DisplaysTheInformationInThe.1']}}</notice>
+</view>
+<view class="demo-item">
+  <notice enableMarquee="{{true}}" show="{{closeShow}}" showIcon="{{false}}" type="{{noticeType}}" mode="{{noticeMode}}" action="{{actionText}}" onClick="actionClick" actionLeft="{{actionLeftText}}" onClickLeft="linkActionClick">{{I18N_T['ant-mini-program-demo.component.notice.notice.DisplaysTheInformationInThe']}}</notice>
+</view>
+<view class="demo-item">
+  <notice show="{{closeShow}}" type="{{noticeType}}" mode="{{noticeMode}}" action="{{actionText}}" onClick="actionClick" actionLeft="{{actionLeftText}}" onClickLeft="linkActionClick">{{I18N_T['ant-mini-program-demo.component.notice.notice.DisplaysTheInformationInThe.2']}}</notice>
+</view>
+<view class="demo-item">
+  <notice show="{{closeShow}}" type="{{noticeType}}" mode="{{noticeMode}}" action="{{actionText}}" onClick="actionClick" actionLeft="{{actionLeftText}}" onClickLeft="linkActionClick" capsule="{{true}}" capsuleItem="{{capsuleItem}}">{{capsuleItem.length > 0? capsuleItem.length + I18N_T['ant-mini-program-demo.component.notice.notice.IndividualRecommendations']:I18N_T['ant-mini-program-demo.component.notice.notice.NoOffersToRecommend']}}
+  </notice>
+</view>
+
+<view class="demo-title">type: </view>
+<radio-group class="radio-group" onChange="typeChange" name="type">
+  <label class="radio" a:for="{{type}}" key="label-{{index}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" />
+    <text class="radio-text">{{item.value}}</text>
+  </label>
+</radio-group>
+
+<view class="demo-title">mode: </view>
+<radio-group class="radio-group" onChange="modeChange" name="mode">
+  <label class="radio" a:for="{{mode}}" key="label-{{index}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" />
+    <text class="radio-text">{{item.value}}</text>
+  </label>
+</radio-group>
+
+<input placeholder="{{I18N_T['ant-mini-program-demo.component.notice.notice.TextOnTheRight']}}" value="{{actionText?actionText:''}}" onInput="getRightText" />
+<input placeholder="{{I18N_T['ant-mini-program-demo.component.notice.notice.TextOnTheLeft']}}" a:if="{{actionText !== '' || noticeMode !== ''}}" onInput="getLeftText" />
+
+
+<view class="demo-title">{{I18N_T['ant-mini-program-demo.component.notice.notice.CapsuleBulletinBoardItem']}}</view>
+<checkbox-group class="radio-group" onChange="capsuleItemChange" name="capsule">
+  <label class="checkbox" a:for="{{capsuleItemList}}" key="label-{{index}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" style="vertical-align: middle;" />
+    <image src="{{item.value}}" class="itemSize" />
+  </label>
+</checkbox-group>

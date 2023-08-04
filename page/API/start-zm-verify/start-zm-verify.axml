@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.API.start-zm-verify.start-zm-verify.SesameAuthenticationApi']}}</view>
+  <view class="page-section">
+    <view class="page-section-title">my.startZMVerify</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="startZMVerify">{{I18N_T['ant-mini-program-demo.API.start-zm-verify.start-zm-verify.EvokeAuthenticationPage']}}</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text>{{I18N_T['ant-mini-program-demo.API.get-system-info.get-system-info.MobilePhoneModel']}}</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.model}}" />
+    </view>
+    <view class="page-section-demo">
+      <text>{{I18N_T['ant-mini-program-demo.API.get-system-info.get-system-info.Language']}}</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.language}}" />
+    </view>
+    <view class="page-section-demo">
+      <text>{{I18N_T['ant-mini-program-demo.API.get-system-info.get-system-info.Version']}}</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.version}}" />
+    </view>
+    <view class="page-section-demo">
+      <text>{{I18N_T['ant-mini-program-demo.API.get-system-info.get-system-info.WindowWidth']}}</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.windowWidth}}" />
+    </view>
+    <view class="page-section-demo">
+      <text>{{I18N_T['ant-mini-program-demo.API.get-system-info.get-system-info.WindowHeight']}}</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.windowHeight}}" />
+    </view>
+    <view class="page-section-demo">
+      <text>DPI</text>
+      <input type="text" disabled="{{true}}" value="{{systemInfo.pixelRatio}}" />
+    </view>
+    <view class="page-section-btns">
+      <view onTap="getSystemInfo">{{I18N_T['ant-mini-program-demo.API.get-system-info.get-system-info.ObtainMobilePhoneSystemInformation']}}</view>
+      <view onTap="getSystemInfoSync">{{I18N_T['ant-mini-program-demo.API.get-system-info.get-system-info.SynchronouslyObtainMobilePhoneSystem']}}</view>
+    </view>
+  </view>
+</view>

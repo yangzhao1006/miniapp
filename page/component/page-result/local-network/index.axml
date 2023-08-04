@@ -1,0 +1,5 @@
+<view>
+  <page-result type="network" local="{{true}}" brief="{{I18N_T['ant-mini-program-demo.page-result.local-network.PoorNetwork']}}" />
+  <view style="height: 150px; margin: 10px; background: #dddddd;" />
+  <view style="height: 150px; margin: 10px; background: #dddddd;" />
+</view>

@@ -1,0 +1,11 @@
+<view class="favorite">
+  <favorite>{{I18N_T['ant-mini-program-demo.component.favorite.favorite.SampleCollectionMiniPrograms']}}</favorite>
+  <view class="name">
+    <text>Favorite</text>
+  </view>
+  <view class="title">
+    <view>{{I18N_T['ant-mini-program-demo.component.favorite.favorite.CollectionComponents']}}</view>
+    <view>favorite</view>
+  </view>
+  <view class="explanation">{{I18N_T['ant-mini-program-demo.component.favorite.favorite.TheUserIsPromptedTo']}}</view>
+</view>

@@ -1,0 +1,28 @@
+<view>
+	<list>
+		<view a:for="{{list}}" key="{{item.content}}">
+			<swipe-action
+				index="{{index}}"
+				restore="{{swipeIndex === null || swipeIndex !== index}}"
+				right="{{item.right}}"
+				onRightItemClick="onRightItemClick"
+				onSwipeStart="onSwipeStart"
+				extra="item{{index}}"
+				borderRadius="{{index <= 2 ? true : false}}"
+			>
+				<list-item
+					arrow="horizontal"
+					index="{{index}}"
+					key="items-{{index}}"
+					onClick="onItemClick"
+					last="{{index === list.length - 1}}"
+					upperSubtitle="{{index >= 4?I18N_T['ant-mini-program-demo.component.swipe-action.swipe-action.HaveSubTitle']:''}}"
+					lowerSubtitle="{{index === 5? I18N_T['ant-mini-program-demo.component.swipe-action.swipe-action.SmallSubTitle']:''}}"
+					borderRadius="{{index <= 2 ? true : false}}"
+				>
+					{{item.content}}
+				</list-item>
+			</swipe-action>
+		</view>
+	</list>
+</view>

@@ -1,0 +1,6 @@
+<view>
+  <list>
+    <picker-item data-field="bank" placeholder="{{I18N_T['ant-mini-program-demo.component.picker-item.SelectIssuingBank']}}" value="{{bank}}" onPickerTap="onPickerTap">{{I18N_T['ant-mini-program-demo.component.picker-item.IssuingBank']}}</picker-item>
+    <picker-item data-field="bank" placeholder="{{I18N_T['ant-mini-program-demo.component.picker-item.SelectIssuingBank']}}" value="{{bank}}" onPickerTap="onPickerTap" layer="vertical">{{I18N_T['ant-mini-program-demo.component.picker-item.IssuingBank']}}</picker-item>
+  </list>
+</view>

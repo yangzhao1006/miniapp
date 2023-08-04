@@ -1,0 +1,15 @@
+<steps className="demo-steps-class" activeIndex="{{activeIndex}}" items="{{items}}" />
+<steps className="demo-steps-class" activeIndex="{{activeIndex}}" items="{{items2}}" />
+<steps className="demo-steps-class" direction="vertical" failIndex="{{failIndex}}" activeIndex="{{activeIndex}}" items="{{items2}}" size="{{size}}" />
+<view class="demo-btn-container">
+  <button class="demo-btn" onTap="preStep">{{I18N_T['ant-mini-program-demo.component.steps.steps.PreviousStep']}}</button>
+  <button class="demo-btn" onTap="nextStep">{{I18N_T['ant-mini-program-demo.component.steps.steps.Next']}}</button>
+</view>
+<view class="demo-btn-container">
+  <button class="demo-btn" onTap="setFailIndex">{{I18N_T['ant-mini-program-demo.component.steps.steps.SettingErrorItems']}}</button>
+  <button class="demo-btn" onTap="cancelFailIndex">{{I18N_T['ant-mini-program-demo.component.steps.steps.CancelErrorItems']}}</button>
+</view>
+<view class="demo-btn-container">
+  <button class="demo-btn" onTap="setIconSizeAdd">{{I18N_T['ant-mini-program-demo.component.steps.steps.SetTheIconSize']}}</button>
+  <button class="demo-btn" onTap="setIconSizeReduce">{{I18N_T['ant-mini-program-demo.component.steps.steps.SetTheIconSize.1']}}</button>
+</view>

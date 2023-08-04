@@ -1,0 +1,72 @@
+<view class="page">
+  <view>
+    <button a:if="{{returnIndex}}" onTap="returnIndex">{{I18N_T['ant-mini-program-demo.component.view.view.BackToHomePage']}}</button>
+  </view>
+  <view class="page-description">{{I18N_T['ant-mini-program-demo.component.view.view.TheViewContainerIsEquivalent']}}</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <view class="stream">
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Chris</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">{{I18N_T['ant-mini-program-demo.component.view.view.WelcomeToAlipayMiniProgram']}}</view>
+            <view class="postBody__date">
+              May 20
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jack</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">{{I18N_T['ant-mini-program-demo.component.view.view.ChrisHowShouldIGet']}}</view>
+            <view class="postBody__date">
+              May 21
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Chris</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">{{I18N_T['ant-mini-program-demo.component.view.view.YouCanViewTheDemo']}}</view>
+            <view class="postBody__date">
+              May 22
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red">
+            <view class="postBody__content">{{I18N_T['ant-mini-program-demo.component.view.view.Awesome.1']}}</view>
+            <view class="postBody__date" hidden>
+              June 1
+            </view>
+          </view>
+        </view>
+
+        <view class="post" hidden>
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">{{I18N_T['ant-mini-program-demo.component.view.view.Awesome']}}</view>
+            <view class="postBody__date">
+              June 1
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

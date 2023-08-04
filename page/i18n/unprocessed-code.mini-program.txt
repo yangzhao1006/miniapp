@@ -1,0 +1,171 @@
+
+-------------------------------------------------------------------------------
+-------------------------- 👇 重要信息👇 --------------------------------
+  由于这些模板较为复杂，提取后会造成翻译不准确，所以建议进行手动处理
+  下边列出了所有模板的位置，你也可以在后边这个文件找他们:  /Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/i18n/unprocessed-code.mini-program.txt 
+  后边的这个文档提供了怎么处理处理这些模板的方法:
+  http://gitlab.alibaba-inc.com/parrot/parrot-tool-must/blob/master/doc/es6tempale.md
+-------------------------------------------------------------------------------
+  
+ seek{{seek}}s播放 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/API/create-inner-audiocontext/create-inner-audiocontext.axml) 
+
+ 当前选择：{{callback}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/API/create-inner-audiocontext/create-inner-audiocontext.axml) 
+
+ 当前选择：{{callback2}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/API/create-inner-audiocontext/create-inner-audiocontext.axml) 
+
+ 目前状态：{{ condition ? "已经开启监听" : '已经取消监听' }} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/API/user-capture-screen/user-capture-screen.axml) 
+
+ 自适应高度的内容区域 共 {{index + 1}} 行 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/collapse/index.axml) 
+
+ 自适应高度的内容区域 共 {{index + 1}} 行 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/collapse/index.axml) 
+
+ 你输入的是：{{inputValue}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/input/input.axml) 
+
+ {{primarySlotTypes[titleSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[upperSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[lowerSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[titleSlotIndex] === '问号图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[upperSlotIndex] === '问号图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[lowerSlotIndex] === '问号图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{supSlotTypes[supSlotIndex] === '问号图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{supSlotTypes[supSlotIndex] === '勾图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{supSlotTypes[supSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{supSlotTypes[supSlotIndex] === '文字内容'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '问号图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '勾图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '文字内容'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '开关'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '胶囊按钮'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ 当前选择：{{titlePositions[titlePosIndex]}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ 当前选择：{{primarySlotTypes[titleSlotIndex]}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[titleSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[titleSlotIndex] === '问号图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ 当前选择：{{primarySlotTypes[upperSlotIndex]}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[upperSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[upperSlotIndex] === '问号图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ 当前选择：{{primarySlotTypes[lowerSlotIndex]}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[lowerSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{primarySlotTypes[lowerSlotIndex] === '问号图标'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ 当前选择：{{secSlotTypes[secSlotIndex]}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex].includes('图标')}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '文字内容'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{secSlotTypes[secSlotIndex] === '胶囊按钮'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ 当前选择：{{supSlotTypes[supSlotIndex]}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{supSlotTypes[supSlotIndex].includes('图标')}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{supSlotTypes[supSlotIndex] === '标签'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ {{supSlotTypes[supSlotIndex] === '文字内容'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/list-item/index.axml) 
+
+ 营销弹窗蒙层，type="{{type}}" 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/mask/mask.axml) 
+
+ 产品弹窗蒙层，type="{{type}}" 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/mask/mask.axml) 
+
+ {{capsuleItem.length > 0? capsuleItem.length + ' 个优惠信息推荐':'暂无优惠信息推荐'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/notice/notice.axml) 
+
+ 当前选择：{{array[index]}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/picker/picker.axml) 
+
+ 当前选择：{{objectArray[arrIndex].name}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/picker/picker.axml) 
+
+ 点击{{show ? '隐藏' : '显示'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/popover/popover.axml) 
+
+ 蒙层{{showMask ? '隐藏' : '显示'}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/popover/popover.axml) 
+
+ {{index >= 4?'这是一个有副标题的列表':''}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/swipe-action/swipe-action.axml) 
+
+ {{index === 5?'这是一个小的副标题':''}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/swipe-action/swipe-action.axml) 
+
+ 高度为 130px {{item.title}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/tabs/tabs.axml) 
+
+ 改变 tab-content 高度为 200px {{item.title}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/tabs/tabs.axml) 
+
+ 当前选择：{{arrowPositions[arrowPosIndex]}} 
+ at (/Users/zkiie/MiniProjects/mPaaS-API-Demo-i18n/page/component/tips/1/index.axml) 
+

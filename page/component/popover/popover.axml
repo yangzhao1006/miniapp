@@ -1,0 +1,18 @@
+<view class="demo-popover">
+  <popover position="{{position}}" show="{{show}}" showMask="{{showMask}}" onMaskClick="onMaskClick">
+    <view class="demo-popover-btn" onTap="onShowPopoverTap">{{I18N_T['ant-mini-program-demo.component.popover.popover.Click']}}{{show ? I18N_T['ant-mini-program-demo.component.popover.popover.Hide'] : I18N_T['ant-mini-program-demo.component.popover.popover.Show']}}</view>
+    <view slot="items">
+      <popover-item onItemClick="itemTap1" iconType="{{showIcon ? 'qr' : ''}}" data-direction="{{position}}">
+        <text>{{position}}</text>
+      </popover-item>
+      <popover-item onItemClick="itemTap2" iconType="{{showIcon ? 'qr' : ''}}" data-index="{{2}}">
+        <text>line2</text>
+      </popover-item>
+    </view>
+  </popover>
+</view>
+<view class="demo-popover-test-btns">
+  <button class="demo-popover-test-btn" onTap="onNextPositionTap">{{I18N_T['ant-mini-program-demo.component.popover.popover.NextPosition']}}</button>
+  <button class="demo-popover-test-btn" onTap="onMaskChangeTap">{{I18N_T['ant-mini-program-demo.component.popover.popover.Monolayer']}}{{showMask ? I18N_T['ant-mini-program-demo.component.popover.popover.Hide'] : I18N_T['ant-mini-program-demo.component.popover.popover.Show']}}</button>
+  <button class="demo-popover-test-btn" onTap="onIconChangeTap">{{I18N_T['ant-mini-program-demo.component.popover.popover.ShowHideIcons']}}</button>
+</view>

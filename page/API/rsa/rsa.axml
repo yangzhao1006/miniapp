@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.rsa.rsa.Input']}}</view>
+    <view class="page-section-demo">
+      <textarea value="{{inputValue}}" maxlength="500" onInput="onInput" />
+    </view>
+
+    <view class="page-section-title">{{I18N_T['ant-mini-program-demo.API.rsa.rsa.Output']}}</view>
+    <view class="page-section-demo">
+      <textarea value="{{outputValue}}" maxlength="500" />
+    </view>
+
+    <view class="page-section-btns">
+      <view size="mini" onTap="onEncrypt">{{I18N_T['ant-mini-program-demo.API.rsa.rsa.Encryption']}}</view>
+      <view size="mini" onTap="onDecrypt">{{I18N_T['ant-mini-program-demo.API.rsa.rsa.Decryption']}}</view>
+    </view>
+  </view>
+</view>

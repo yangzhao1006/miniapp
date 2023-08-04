@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="page-description">
+    <view class="text-demo-title">
+      <text class="text-demo-text">{{I18N_T['ant-mini-program-demo.component.text.text.ThisIsAParagraphOf']}}<text>\</text><text>n</text>{{I18N_T['ant-mini-program-demo.component.text.text.YouCanWrapLines']}}</text>
+    </view>  
+  </view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text>{{text}}</text>
+    </view>
+  </view>
+</view>

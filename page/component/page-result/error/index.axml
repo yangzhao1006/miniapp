@@ -1,0 +1,3 @@
+<view>
+  <page-result type="error" title="{{I18N_T['ant-mini-program-demo.page-result.error.ThePageEncounteredSomeMinor']}}" brief="{{I18N_T['ant-mini-program-demo.page-result.error.WeApologizeForTheDelay']}}" footer="{{footer}}" />
+</view>

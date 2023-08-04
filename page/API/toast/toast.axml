@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="page-description">Toast API</view>
+  <view class="page-section">
+    <view class="page-section-title">my.showToast</view>
+    <view class="page-section-btns">
+      <view type="primary" onTap="showToastSuccess">{{I18N_T['ant-mini-program-demo.API.toast.toast.ASuccessMessageIsDisplayed']}}</view>
+      <view type="primary" onTap="showToastFail">{{I18N_T['ant-mini-program-demo.API.toast.toast.PromptForFailure']}}</view>
+    </view>
+    <view class="page-section-btns">
+      <view type="primary" onTap="showToastException">{{I18N_T['ant-mini-program-demo.API.toast.toast.AnExceptionMessageIsDisplayed']}}</view>
+      <view type="primary" onTap="showToastNone">{{I18N_T['ant-mini-program-demo.API.toast.toast.ShowAWeakPromptOf']}}</view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">my.hideToast</view>
+    <view class="page-section-btns">
+      <view onTap="hideToast">{{I18N_T['ant-mini-program-demo.API.toast.toast.HideWeakPrompts']}}</view>
+    </view>
+  </view>
+</view>

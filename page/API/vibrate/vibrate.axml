@@ -1,0 +1,9 @@
+<view class="page">
+
+  <button type="primary" onTap="vibrate">{{I18N_T['ant-mini-program-demo.API.vibrate.vibrate.StartVibration']}}</button>
+
+  <button type="primary" onTap="vibrateLong">{{I18N_T['ant-mini-program-demo.API.vibrate.vibrate.LongTimeVibrationMs']}}</button>
+
+  <button type="primary" onTap="vibrateShort">{{I18N_T['ant-mini-program-demo.API.vibrate.vibrate.ShortTimeVibrationMs']}}</button>
+
+</view>

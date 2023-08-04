@@ -1,0 +1,10 @@
+<view>
+  <list>
+    <list-item arrow="horizontal" index="tips" onClick="openPage" data-url="1/index" key="items-tips">
+      <view>{{I18N_T['ant-mini-program-demo.component.tips.tips.Tip']}}</view>
+    </list-item>
+    <list-item arrow="horizontal" index="tips" onClick="openPage" data-url="2/index" key="items-tips">
+      <view>{{I18N_T['ant-mini-program-demo.component.tips.tips.Tip.1']}}</view>
+    </list-item>
+  </list>
+</view>
