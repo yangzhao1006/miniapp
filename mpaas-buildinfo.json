@@ -1,0 +1,36 @@
+[
+  {
+    "appId": "19837BD161358",
+    "workspace": "sit",
+    "h5Id": "1111111111111119",
+    "h5Name": "支付宝小程序8",
+    "h5Version": "1.1.2.4",
+    "autoInstall": 0,
+    "resourceType": 4,
+    "installType": 0,
+    "iOSClientVersion": "1.0-5.0",
+    "AndroidClientVersion": "2.0-5.0",
+    "iconFile": "",
+    "enableTabBar": 0,
+    "enableOptionMenu": 0,
+    "mainUrl": "/www/index.html",
+    "enableKeepAlive": 0
+  },
+  {
+    "appId": "19837BD161358",
+    "workspace": "sit",
+    "h5Id": "1111111111111121",
+    "h5Name": "小程序测试2",
+    "h5Version": "1.1.2.4",
+    "autoInstall": 0,
+    "resourceType": 4,
+    "installType": 0,
+    "iOSClientVersion": "1.1-5.1",
+    "AndroidClientVersion": "2.1-5.1",
+    "iconFile": "",
+    "enableTabBar": 0,
+    "enableOptionMenu": 0,
+    "mainUrl": "/www/index.html",
+    "enableKeepAlive": 0
+  }
+]
